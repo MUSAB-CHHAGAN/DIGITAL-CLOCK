@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 body {
+  background: black;
+  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
