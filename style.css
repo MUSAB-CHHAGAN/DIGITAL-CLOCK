@@ -1,0 +1,36 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#clock {
+  margin-top: 2rem;
+  max-width: 20vw;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: 900;
+}
+@media screen and (max-width: 520px) {
+  body {
+  }
+  #clock {
+    max-width: 60vw;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
